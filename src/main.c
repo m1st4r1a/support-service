@@ -59,7 +59,7 @@ void view(struct request* queue){
   char time_str[64];
   struct tm *tm_info = localtime(&(queue->timestamp));
   strftime(time_str, sizeof(time_str), "%Y-%m-%d %H:%M:%S", tm_info);
-  printf("Время: %s\n", time_str);
+  printf("Время: %s\n\n", time_str);
 }
 
 void view_cancelled(){
@@ -388,9 +388,9 @@ int main(){
       else
         printf("Введён некорректный номер очереди\n");
     }else if(strcmp(buffer, "move") == 0){
-      printf("Из какой очереди (1-3): ");
+      printf("Откуда: ");
       scanf(" %c", &num_queue);
-      printf("В какую очередь (1-3): ");
+      printf("Куда: ");
       char num_queue2;
       scanf(" %c", &num_queue2);
 
@@ -405,6 +405,8 @@ int main(){
         move(from, to);
     }else if(strcmp(buffer, "search") == 0){
       search(first, second, third);
+    }else if(strcmp(buffer, "list") == 0){
+      list(first, second, third);
     }else if(strcmp(buffer, "cancel") == 0){
       printf("Введите номер очереди: ");
       scanf(" %c", &num_queue);
