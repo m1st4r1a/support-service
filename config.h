@@ -35,19 +35,19 @@
 #define LT_OBJDIR ".libs/"
 
 /* Name of package */
-#define PACKAGE "lcg_lab"
+#define PACKAGE "support-service"
 
 /* Define to the address where bug reports for this package should be sent. */
 #define PACKAGE_BUGREPORT "mdddmmmm@yandex.ru"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "LCG_lab"
+#define PACKAGE_NAME "support-service"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "LCG_lab 1.0"
+#define PACKAGE_STRING "support-service 1.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "lcg_lab"
+#define PACKAGE_TARNAME "support-service"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -55,7 +55,7 @@
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1.0"
 
-/* Define to 1 if all of the C89 standard headers exist (not just the ones
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
    required in a freestanding environment). This macro is provided for
    backward compatibility; new code need not use it. */
 #define STDC_HEADERS 1
